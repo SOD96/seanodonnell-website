@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Index;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 
 class IndexController extends Controller
 {
@@ -56,6 +57,17 @@ class IndexController extends Controller
         }
 
         return $posts;
+    }
 
+    public function processContact(Request $r) {
+
+        $to_name = 'Sean O\'Donnell';
+        $to_email = 'contact@seanodonnell.co.uk';
+        $data = array('name'=>"SeanOdonnell", "body" => "SeanODonnell");
+        Mail::send('emails.contact-form', $data, function($message) use ($to_name, $to_email) {
+            $message->to($to_email, $to_name)
+                ->subject('Contact Form Request Submitted');
+            $message->from('info@seanodonnell.co.uk','seanodonnell.co.uk');
+        });
     }
 }

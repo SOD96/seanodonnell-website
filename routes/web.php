@@ -13,4 +13,5 @@
 
 
 Route::get('/', 'Index\IndexController@showIndex');
+Route::post('contact-form', 'Index\IndexController@processContact');
 

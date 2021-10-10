@@ -64,7 +64,7 @@
             <!-- intro -->
             <div class="intro">
                 <!-- avatar image -->
-                <img src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/seans+face+instagram.jpg" alt="Sean's Face!" class="mb-4" />
+                <img src="https://d1jwnk81pqqyj5.cloudfront.net/images/seans+face+instagram.jpg" alt="Sean's Face!" class="mb-4" />
 
                 <!-- info -->
                 <h1 class="mb-2 mt-0">{{env('THEME_FULL_NAME')}}</h1>
@@ -73,7 +73,7 @@
                 <!-- social icons -->
                 <ul class="social-icons light list-inline mb-0 mt-4">
                     <li class="list-inline-item"><a href="https://www.instagram.com/sean_odonnell_96/"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/sean_odonell96"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/sean_odonnell96"><i class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/sean-o-donnell-a435a770/"><i class="fab fa-linkedin"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/XenZibe/"><i class="fab fa-github"></i></a></li>
                 </ul>
@@ -323,13 +323,13 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/streamupdater.com.png')}}" alt="Portfolio-title" />
+                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streamupdater.com.png')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
                     <div id="su-diag" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/streamupdater.com.png')}}" alt="Title" />
+                        <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streamupdater.com.png')}}" alt="Title" />
                         <h2>Stream Updater</h2>
                         <p>StreamUpdater is a platform designed to help streamers manage their twitch.tv streams automatically.</p>
                         <p>StreamUpdater was the first platform to change stream title and games automatically for the streamer to ensure everything is up to date.</p>
@@ -347,13 +347,13 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/streambit.tv.png')}}" alt="Portfolio-title" />
+                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streambit.tv.png')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
                     <div id="sb-diag" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/streambit.tv.png')}}" alt="Title" />
+                        <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streambit.tv.png')}}" alt="Title" />
                         <h2>StreamBit</h2>
                         <p>StreamBit is a VOD and Streaming platform designed to compete with some of the biggest sites in the gaming scene</p>
                         <p>This was also one of the first companies I setup to learn more about business and terminology.</p>
@@ -372,13 +372,13 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/unreal.jpg')}}" alt="Portfolio-title" />
+                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/unreal.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
                     <div id="poi-diag" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/unreal.jpg')}}" alt="Title" />
+                        <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/unreal.jpg')}}" alt="Title" />
                         <h2>Path Of Immortals</h2>
                         <p>Gaming has always been one of my biggest passions, that is why I'm learning how they work.</p>
                         <p>Currently learning on the Unreal Engine</p>
@@ -395,13 +395,13 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/gmod.jpg')}}" alt="Portfolio-title" />
+                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/gmod.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
                     <div id="txp-diag" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/gmod.jpg')}}" alt="Title" />
+                        <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/gmod.jpg')}}" alt="Title" />
                         <h2>TheXenProject</h2>
                         <p>I've been involved in Game Servers since I was 15, hosting one of the most popular servers for the video game Garry's Mod.</p>
                         <p>TheXenProject was shelved due to focusing on education but still exists as a project to continue my education in game servers and Linux especially</p>
@@ -418,13 +418,13 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/super-mario.jpg')}}" alt="Portfolio-title" />
+                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/super-mario.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
                     <div id="mario-diag" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{URL::to('https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/images/super-mario.jpg')}}" alt="Title" />
+                        <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/super-mario.jpg')}}" alt="Title" />
                         <h2>MarioShare</h2>
                         <p>This was a project for the Super Mario Maker video game that came out for the Nintendo Switch</p>
                         <p>This project gathered over 400 users and 1,000 shares levels being posted on it before being taken down as nintendo had developed their own service thus making my one irrelevant</p>
@@ -645,8 +645,8 @@
 
                 <div class="col-md-8">
                     <!-- Contact Form -->
-                    <form id="contact-form" class="contact-form mt-6" method="post" action="form/contact.php">
-
+                    <form id="contact-form" class="contact-form mt-6" method="post" action="{{URL::to('contact-form')}}">
+                        {{ csrf_field() }}
                         <div class="messages"></div>
 
                         <div class="row">
@@ -703,23 +703,23 @@
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
 <!-- SCRIPTS -->
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/jquery-1.12.3.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/jquery.easing.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/jquery.waypoints.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/jquery.counterup.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/popper.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/bootstrap.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/isotope.pkgd.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/infinite-scroll.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/imagesloaded.pkgd.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/slick.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/contact.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/validator.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/wow.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/morphext.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/parallax.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/jquery.magnific-popup.min.js"></script>
-<script src="https://seanodonnell-assets.s3.eu-west-2.amazonaws.com/js/custom.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/jquery-1.12.3.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/jquery.easing.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/jquery.waypoints.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/jquery.counterup.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/popper.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/bootstrap.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/isotope.pkgd.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/infinite-scroll.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/slick.min.js"></script>
+<script src="/js/contact.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/validator.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/wow.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/morphext.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/parallax.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/jquery.magnific-popup.min.js"></script>
+<script src="https://d1jwnk81pqqyj5.cloudfront.net/js/custom.js"></script>
 
 </body>
 </html>
