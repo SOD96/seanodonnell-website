@@ -5,6 +5,9 @@
 <h2>New Contact Form Request</h2>
 
 <p>There's been a new contact form request</p>
+<pre>
+    {{var_dump($data)}}
+</pre>
 
 <ul>
     <li>Discord: <a href="https://discord.gg/VgSzBD9"> https://discord.gg/VgSzBD9</a></li>

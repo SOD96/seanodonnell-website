@@ -69,11 +69,11 @@ class IndexController extends Controller
 
         $to_name = 'Sean O\'Donnell';
         $to_email = 'contact@seanodonnell.co.uk';
-        $data = array('name'=>"SeanOdonnell", "body" => "SeanODonnell");
+        $data = array('name'=>"SeanOdonnell", "body" => $r->all());
         Mail::send('emails.contact-form', $data, function($message) use ($to_name, $to_email) {
             $message->to($to_email, $to_name)
                 ->subject('Contact Form Request Submitted');
-            $message->from('info@seanodonnell.co.uk','seanodonnell.co.uk');
+            $message->from('sean@streambit.tv');
         });
     }
 }
