@@ -6,7 +6,7 @@
 
 <p>There's been a new contact form request</p>
 <pre>
-    {{var_dump($data)}}
+    {{var_dump($body)}}
 </pre>
 
 <ul>
