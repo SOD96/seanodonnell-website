@@ -24,7 +24,8 @@ class IndexController extends Controller
         $end = Carbon::parse(1110584223);
         $tea = round(($end->diffInDays(Carbon::now()) * 1.25));
 
-        $posts = $this->fetchBlogPosts();
+        //$posts = $this->fetchBlogPosts();
+        $posts = []; // Do this while we figure out a new solution for blog posting.
 
         return view('index', [
             'tea' => $tea,
