@@ -49,7 +49,7 @@
     <!-- site footer -->
     <div class="footer">
         <!-- copyright text -->
-        <span class="copyright">© 2020 {{env('THEME_FULL_NAME')}}</span>
+        <span class="copyright">© {{date('Y')}} {{env('THEME_FULL_NAME')}}</span>
     </div>
 
 </header>
@@ -75,12 +75,12 @@
                     <li class="list-inline-item"><a href="https://www.instagram.com/sean_odonnell_96/"><i class="fab fa-instagram"></i></a></li>
                     <li class="list-inline-item"><a href="https://twitter.com/sean_odonnell96"><i class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/sean-o-donnell-a435a770/"><i class="fab fa-linkedin"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/XenZibe/"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/SOD96/"><i class="fab fa-github"></i></a></li>
                 </ul>
 
                 <!-- buttons -->
                 <div class="mt-4">
-                    <a href="#contact" class="btn btn-default">Contact me</a>
+                    <a href="mailto:contact@seanodonnell.co.uk" class="btn btn-default">Contact me</a>
                 </div>
             </div>
 
@@ -138,8 +138,7 @@
 
                 <div class="col-md-3">
                     <div class="text-center text-md-left">
-                        <!-- avatar image -->
-                        <!-- <img src="https://via.placeholder.com/150x150" alt="Bolby" /> -->
+                        <img src="{{URL::to('/images/sean-cat.png')}}" alt="Bolby" />
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
@@ -149,53 +148,92 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- about text -->
-                                <p>I'm {{env('THEME_FULL_NAME')}}, PHP Developer, Supporter of moving everything into the Cloud ☁, System Administrator and all around follower in technology! </p>
-                                <div class="mt-3">
-                                    <a href="#contact" class="btn btn-default">Request a CV</a>
-                                </div>
+                                <p>I'm {{env('THEME_FULL_NAME')}}, Software Developer, Supporter of moving everything into the Cloud ☁, System Administrator and all around follower in technology!</p>
+                                <p>That's Chloe the cat on my shoulder!</p>
                                 <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                             </div>
 
-{{--                            <div class="col-md-6">--}}
-{{--                                <!-- skill item -->--}}
-{{--                                <div class="skill-item">--}}
-{{--                                    <div class="skill-info clearfix">--}}
-{{--                                        <h4 class="float-left mb-3 mt-0">Development</h4>--}}
-{{--                                        <span class="float-right">85%</span>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="progress">--}}
-{{--                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FFD15C">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="spacer" data-height="20"></div>--}}
-{{--                                </div>--}}
+                            <h4>Skills / Proficient Skills</h4>
 
-{{--                                <!-- skill item -->--}}
-{{--                                <div class="skill-item">--}}
-{{--                                    <div class="skill-info clearfix">--}}
-{{--                                        <h4 class="float-left mb-3 mt-0">Networking / System Administration</h4>--}}
-{{--                                        <span class="float-right">95%</span>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="progress">--}}
-{{--                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-color="#FF4C60">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="spacer" data-height="20"></div>--}}
-{{--                                </div>--}}
+                        </div>
 
-{{--                                <!-- skill item -->--}}
-{{--                                <div class="skill-item">--}}
-{{--                                    <div class="skill-info clearfix">--}}
-{{--                                        <h4 class="float-left mb-3 mt-0">AWS / Azure</h4>--}}
-{{--                                        <span class="float-right">70%</span>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="progress">--}}
-{{--                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- skill item -->
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">C++</h4>
+                                        <span class="float-right">25%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" data-color="#FFD15C">
+                                        </div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
 
+                                <!-- skill item -->
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">VueJS</h4>
+                                        <span class="float-right">50%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-color="#FF4C60">
+                                        </div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
+
+                                <!-- skill item -->
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">Serverless</h4>
+                                        <span class="float-right">10%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-color="#6C6CE5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">PHP / Laravel</h4>
+                                        <span class="float-right">100%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#FFD15C">
+                                        </div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">IT System Administration & Networking</h4>
+                                        <span class="float-right">100%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#FF4C60">
+                                        </div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">AWS EC2, RDS, MediaConvert, S3...</h4>
+                                        <span class="float-right">100%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#6C6CE5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -257,7 +295,7 @@
         <div class="container">
 
             <!-- section title -->
-            <h2 class="section-title wow fadeInUp">Services</h2>
+            <h2 class="section-title wow fadeInUp">Skills & Training</h2>
 
             <div class="spacer" data-height="60"></div>
 
@@ -266,15 +304,16 @@
                 <div class="col-md-4">
                     <!-- service box -->
                     <div class="service-box rounded data-background padding-30 text-center text-light shadow-blue" data-color="#6C6CE5">
-                        <h3 class="mb-3 mt-0">Development</h3>
-                        <p class="mb-0">With a focus more on backend, I routinely use languages such as PHP and C#</p>
+                        <h3 class="mb-3 mt-0">Software Development</h3>
+                        <p class="mb-0">With a focus more on backend, I routinely use languages such as PHP and C#. However I am currently taking a course in C++.</p>
+                        <p class="mb-0">While I've focused on backend, I utilize frontend frameworks such as VueJS in my projects.</p>
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
 
                 <div class="col-md-4">
                     <!-- service box -->
-                    <div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#F9D74C">
+                    <div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#DFD660">
                         <h3 class="mb-3 mt-0">System Administration</h3>
                         <p class="mb-0">Years of experience working with Windows to switching it up in a Mac only office has given me valuable experience across two different methodologies of doing system administration!</p>
                     </div>
@@ -289,10 +328,6 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="mt-5 text-center">
-                <p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>
             </div>
 
         </div>
@@ -323,7 +358,7 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streamupdater.com.png')}}" alt="Portfolio-title" />
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streamupdater.com.png')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
@@ -347,7 +382,7 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streambit.tv.png')}}" alt="Portfolio-title" />
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streambit.tv.png')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
@@ -372,7 +407,7 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/unreal.jpg')}}" alt="Portfolio-title" />
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/unreal.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
@@ -381,7 +416,7 @@
                         <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/unreal.jpg')}}" alt="Title" />
                         <h2>Path Of Immortals</h2>
                         <p>Gaming has always been one of my biggest passions, that is why I'm learning how they work.</p>
-                        <p>Currently learning on the Unreal Engine</p>
+                        <p>Currently learning on the Unreal Engine and undertaking various courses on C++</p>
                     </div>
                 </div>
 
@@ -395,7 +430,7 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/gmod.jpg')}}" alt="Portfolio-title" />
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/gmod.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
@@ -418,7 +453,7 @@
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/super-mario.jpg')}}" alt="Portfolio-title" />
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/super-mario.jpg')}}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
@@ -428,6 +463,30 @@
                         <h2>MarioShare</h2>
                         <p>This was a project for the Super Mario Maker video game that came out for the Nintendo Switch</p>
                         <p>This project gathered over 400 users and 1,000 shares levels being posted on it before being taken down as nintendo had developed their own service thus making my one irrelevant</p>
+                    </div>
+                </div>
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item creative design">
+                    <a href="#zodazn-diag" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Web</span>
+                                <h4 class="title">Zodazn.com</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('/images/zodazn.png')}}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="zodazn-diag" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{URL::to('/images/zodazn.png')}}" alt="Title" />
+                        <h2>Zodazn</h2>
+                        <p>Zodazn is a simple leads management system</p>
+                        <p>I created Zodazn as a base for learning VueJS + InertiaJS with a Laravel (PHP) Backend. Extremely impressed with the responsive nature I ended up opening it up for anyone that wants to use it as a simple leads platform.</p>
+                        <p>It was originally created to learn more about the leads process and act as a competitor to those extremely bloated platforms.</p>
                     </div>
                 </div>
 
@@ -594,109 +653,32 @@
 
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Latest Posts</h2>
+            <h4 class="wow fadeInUp">Blog Posts from SwitchedBit.com</h4>
 
             <div class="spacer" data-height="60"></div>
 
             <div class="row blog-wrapper">
 
                 @foreach($posts as $p)
-                <div class="col-md-4">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
-                        <div class="thumb">
-                            <a href="{{$p['link']}}">
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="{{$p['link']}}">{{$p['title']}}</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">{{\Carbon\Carbon::parse($p['pubDate'])->diffForHumans()}}</li>
-                            </ul>
+                    <div class="col-md-4" style="padding-bottom: 20px;">
+                        <!-- blog item -->
+                        <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
+                            <div class="thumb">
+                                <a href="{{$p['id']}}">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="{{$p['id']}}">{{\Illuminate\Support\Str::limit($p['title'], 20)}}</a></h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">{{\Carbon\Carbon::parse($p['published'])->diffForHumans()}}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- section contact -->
-    <section id="contact">
-
-        <div class="container">
-
-            <!-- section title -->
-            <h2 class="section-title wow fadeInUp">Get In Touch</h2>
-
-            <div class="spacer" data-height="60"></div>
-
-            <div class="row">
-
-                <div class="col-md-4">
-                    <!-- contact info -->
-                    <div class="contact-info">
-                        <h3 class="wow fadeInUp">Let's talk about everything!</h3>
-                        <p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:sean@streambit.tv">email</a>. 👋</p>
-                    </div>
-                </div>
-
-                <div class="col-md-8">
-                    <!-- Contact Form -->
-                    <form id="contact-form" class="contact-form mt-6" method="post" action="{{URL::to('contact-form')}}">
-                        {{ csrf_field() }}
-                        <div class="messages"></div>
-
-                        <div class="row">
-                            <div class="column col-md-6">
-                                <!-- Name input -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="column col-md-6">
-                                <!-- Email input -->
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required="required" data-error="Email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="column col-md-12">
-                                <!-- Email input -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject" required="required" data-error="Subject is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="column col-md-12">
-                                <!-- Message textarea -->
-                                <div class="form-group">
-                                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send Message</button><!-- Send Button -->
-
-                    </form>
-                    <!-- Contact Form end -->
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <div class="spacer" data-height="96"></div>
-
 </main>
 
 <!-- Go to top button -->

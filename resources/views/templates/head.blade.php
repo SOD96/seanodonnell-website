@@ -45,5 +45,6 @@
 
         gtag('config', 'UA-57822105-3');
     </script>
+    <link rel="stylesheet" href="/css/custom.css" type="text/css" media="all">
 
 </head>

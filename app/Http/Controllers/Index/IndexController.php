@@ -11,7 +11,7 @@ class IndexController extends Controller
 {
     //
 
-    private $blogFeedUrl = 'https://switchedbit.com/feed/';
+    private $blogFeedUrl = 'https://switchedbit.com/feed.xml';
 
     /**
      * Show our index page
@@ -24,8 +24,7 @@ class IndexController extends Controller
         $end = Carbon::parse(1110584223);
         $tea = round(($end->diffInDays(Carbon::now()) * 1.25));
 
-        //$posts = $this->fetchBlogPosts();
-        $posts = []; // Do this while we figure out a new solution for blog posting.
+        $posts = $this->fetchBlogPosts();
 
         return view('index', [
             'tea' => $tea,
@@ -51,14 +50,11 @@ class IndexController extends Controller
             $array = json_decode($json,TRUE); // Decode the JSON into a PHP Array
 
             if($array) {
-                foreach($array['channel']['item'] as $i) {
+                foreach($array['entry'] as $i) {
                     if($n == 6)
-                    {
                         break;
-                    }
                     $posts[] = $i;
                     $n++;
-
                 }
             }
         }
