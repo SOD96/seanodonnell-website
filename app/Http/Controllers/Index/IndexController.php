@@ -11,16 +11,14 @@ class IndexController extends Controller
 {
     //
 
-    private $blogFeedUrl = 'https://switchedbit.com/feed.xml';
+    private $blogFeedUrl = 'https://seanodonnell.co.uk/blog/feed/';
 
     /**
      * Show our index page
      * Calculates tea!
      */
-    public function showIndex() {
-
-        // I'm taking when I started drinking tea, averaging out that I'd sometimes drink 1 or 2 not drinking all the way cups of tea every day and outputting that.
-        // Basically, I drink a fuck ton of tea.
+    public function showIndex()
+    {
         $end = Carbon::parse(1110584223);
         $tea = round(($end->diffInDays(Carbon::now()) * 1.25));
 
@@ -35,7 +33,8 @@ class IndexController extends Controller
     /**
      * Fetch blog posts from a URL (WordPress Expected)
      */
-    private function fetchBlogPosts() {
+    private function fetchBlogPosts()
+    {
         $posts = []; // Init posts incase we get none back
         $n = 0;
         $websiteResponse = curl_init($this->blogFeedUrl);
@@ -50,7 +49,7 @@ class IndexController extends Controller
             $array = json_decode($json,TRUE); // Decode the JSON into a PHP Array
 
             if($array) {
-                foreach($array['entry'] as $i) {
+                foreach($array['channel']['item'] as $i) {
                     if($n == 6)
                         break;
                     $posts[] = $i;

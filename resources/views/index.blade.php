@@ -30,7 +30,7 @@
     <!-- logo image -->
     <div class="site-logo">
         <a href="{{URL::to('/')}}">
-            <img src="https://i.imgur.com/lUJT5hk.png" alt="Image" />
+            <img src="{{URL::TO('/images/wee_guy.png')}}" alt="Image" />
         </a>
     </div>
 
@@ -42,7 +42,6 @@
             <li><a href="#services"><i class="icon-briefcase"></i></a></li>
             <li><a href="#works"><i class="icon-layers"></i></a></li>
             <li><a href="#blog"><i class="icon-note"></i></a></li>
-            <li><a href="#contact"><i class="icon-bubbles"></i></a></li>
         </ul>
     </nav>
 
@@ -148,8 +147,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- about text -->
-                                <p>I'm {{env('THEME_FULL_NAME')}}, Software Developer, Supporter of moving everything into the Cloud ☁, System Administrator and all around follower in technology!</p>
-                                <p>That's Chloe the cat on my shoulder!</p>
+                                <p>I'm {{env('THEME_FULL_NAME')}}, Software Developer, Cloud ☁ Advocate, System Administrator and all-round passionate follower of technology!</p>
+                                <p>I tend to write a lot about development and tech in general, so you'll find me no doubt somewhere across either social media or you can check out some of my blog posts below.</p>
+                                <p><- That's Chloe the cat on my shoulder! <small>(She's much bigger now, still tries to get up there!)</small></p>
                                 <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                             </div>
 
@@ -163,37 +163,22 @@
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
                                         <h4 class="float-left mb-3 mt-0">C++</h4>
-                                        <span class="float-right">25%</span>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" data-color="#FFD15C">
-                                        </div>
-                                    </div>
-                                    <div class="spacer" data-height="20"></div>
+                                    <div class="spacer" data-height="10"></div>
                                 </div>
 
                                 <!-- skill item -->
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
                                         <h4 class="float-left mb-3 mt-0">VueJS</h4>
-                                        <span class="float-right">50%</span>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-color="#FF4C60">
-                                        </div>
-                                    </div>
-                                    <div class="spacer" data-height="20"></div>
+                                    <div class="spacer" data-height="10"></div>
                                 </div>
 
                                 <!-- skill item -->
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">Serverless</h4>
-                                        <span class="float-right">10%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-color="#6C6CE5">
-                                        </div>
+                                        <h4 class="float-left mb-3 mt-0">Project Management</h4>
                                     </div>
                                 </div>
                             </div>
@@ -201,36 +186,21 @@
                             <div class="col-md-6">
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">PHP / Laravel</h4>
-                                        <span class="float-right">100%</span>
+                                        <h4 class="float-left mb-3 mt-0">PHP / Laravel / Codeigniter</h4>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#FFD15C">
-                                        </div>
-                                    </div>
-                                    <div class="spacer" data-height="20"></div>
+                                    <div class="spacer" data-height="10"></div>
                                 </div>
 
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">IT System Administration & Networking</h4>
-                                        <span class="float-right">100%</span>
+                                        <h4 class="float-left mb-3 mt-0">IT System Administration, Networking and Compliance introducing ISO 27001</h4>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#FF4C60">
-                                        </div>
-                                    </div>
-                                    <div class="spacer" data-height="20"></div>
+                                    <div class="spacer" data-height="10"></div>
                                 </div>
 
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">AWS EC2, RDS, MediaConvert, S3...</h4>
-                                        <span class="float-right">100%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-color="#6C6CE5">
-                                        </div>
+                                        <h4 class="float-left mb-3 mt-0">AWS EC2, RDS, MediaConvert, S3, Serverless...</h4>
                                     </div>
                                 </div>
                             </div>
@@ -313,9 +283,9 @@
 
                 <div class="col-md-4">
                     <!-- service box -->
-                    <div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#DFD660">
+                    <div class="service-box rounded data-background padding-30 text-center shadow-green" data-color="#b2de27d9">
                         <h3 class="mb-3 mt-0">System Administration</h3>
-                        <p class="mb-0">Years of experience working with Windows to switching it up in a Mac only office has given me valuable experience across two different methodologies of doing system administration!</p>
+                        <p class="mb-0">Years of experience working with Windows to switching it up in a Mac only office has given me valuable experience across two different methodologies of system administration!</p>
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
@@ -472,7 +442,7 @@
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
                                 <span class="term">Web</span>
-                                <h4 class="title">Zodazn.com</h4>
+                                <h4 class="title">CRM Project</h4>
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
@@ -483,9 +453,9 @@
                     </a>
                     <div id="zodazn-diag" class="white-popup zoom-anim-dialog mfp-hide">
                         <img src="{{URL::to('/images/zodazn.png')}}" alt="Title" />
-                        <h2>Zodazn</h2>
-                        <p>Zodazn is a simple leads management system</p>
-                        <p>I created Zodazn as a base for learning VueJS + InertiaJS with a Laravel (PHP) Backend. Extremely impressed with the responsive nature I ended up opening it up for anyone that wants to use it as a simple leads platform.</p>
+                        <h2>CRM Project</h2>
+                        <p>This is a simple leads management system</p>
+                        <p>I created this as a base for learning VueJS + InertiaJS with a Laravel (PHP) Backend. Extremely impressed with the responsive nature I ended up opening it up for anyone that wants to use it as a simple leads platform.</p>
                         <p>It was originally created to learn more about the leads process and act as a competitor to those extremely bloated platforms.</p>
                     </div>
                 </div>
@@ -496,156 +466,6 @@
 
     </section>
 
-    <!-- section prices
-    <section id="prices">
-
-        <div class="container">
-
-            <h2 class="section-title wow fadeIn">Pricing Plans</h2>
-
-            <div class="spacer" data-height="60"></div>
-
-            <div class="row">
-
-                <div class="col-md-4 pr-md-0 mt-md-4 mt-0">
-                    <div class="price-item bg-dark rounded shadow-light text-center">
-                        <img src="https://via.placeholder.com/80x80" alt="Regular" />
-                        <h2 class="plan">Basic</h2>
-                        <p>A Simple option but powerful to manage your business</p>
-                        <p>Email support</p>
-                        <h3 class="price"><em>$</em>9<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 px-md-0 my-4 my-md-0">
-                    <div class="price-item bg-dark rounded shadow-light text-center best">
-                        <span class="badge">Recommended</span>
-                        <img src="https://via.placeholder.com/80x80" alt="Premium" />
-                        <h2 class="plan">Premium</h2>
-                        <p>Unlimited product including apps integrations and more features</p>
-                        <p>Mon-Fri support</p>
-                        <h3 class="price"><em>$</em>49<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 pl-md-0 mt-md-4 mt-0">
-                    <div class="price-item bg-dark rounded shadow-light text-center">
-                        <img src="https://via.placeholder.com/80x80" alt="Ultimate" />
-                        <h2 class="plan">Ultimate</h2>
-                        <p>A wise option for large companies and individuals</p>
-                        <p>24/7 support</p>
-                        <h3 class="price"><em>$</em>99<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    -->
-    <!-- section testimonials
-    <section id="testimonials">
-
-        <div class="container">
-
-            <h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
-
-            <div class="spacer" data-height="60"></div>
-
-            <div class="testimonials-wrapper">
-
-                <div class="testimonial-item text-center mx-auto">
-                    <div class="thumb mb-3 mx-auto">
-                        <img src="https://via.placeholder.com/90x90" alt="customer-name" />
-                    </div>
-                    <h4 class="mt-3 mb-0">John Doe</h4>
-                    <span class="subtitle">Product designer at Dribbble</span>
-                    <div class="bg-dark padding-30 shadow-light rounded triangle-top position-relative mt-4">
-                        <p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item text-center mx-auto">
-                    <div class="thumb mb-3 mx-auto">
-                        <img src="https://via.placeholder.com/90x90" alt="customer-name" />
-                    </div>
-                    <h4 class="mt-3 mb-0">John Doe</h4>
-                    <span class="subtitle">Product designer at Dribbble</span>
-                    <div class="bg-dark padding-30 shadow-light rounded triangle-top position-relative mt-4">
-                        <p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 🔥</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="client-item">
-                        <div class="inner">
-                            <img src="https://via.placeholder.com/100x30" alt="client-name" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    -->
-
     <!-- section blog -->
     <section id="blog">
 
@@ -653,7 +473,7 @@
 
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Latest Posts</h2>
-            <h4 class="wow fadeInUp">Blog Posts from SwitchedBit.com</h4>
+            <h4 class="wow fadeInUp">Blog Posts from <a href="https://seanodonnell.co.uk/blog">https://seanodonnell.co.uk/blog</a></h4>
 
             <div class="spacer" data-height="60"></div>
 
@@ -664,13 +484,13 @@
                         <!-- blog item -->
                         <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
                             <div class="thumb">
-                                <a href="{{$p['id']}}">
+                                <a href="{{$p['guid']}}">
                                 </a>
                             </div>
                             <div class="details">
-                                <h4 class="my-0 title"><a href="{{$p['id']}}">{{\Illuminate\Support\Str::limit($p['title'], 20)}}</a></h4>
+                                <h4 class="my-0 title"><a href="{{$p['guid']}}">{{\Illuminate\Support\Str::limit($p['title'], 20)}}</a></h4>
                                 <ul class="list-inline meta mb-0 mt-2">
-                                    <li class="list-inline-item">{{\Carbon\Carbon::parse($p['published'])->diffForHumans()}}</li>
+                                    <li class="list-inline-item">{{\Carbon\Carbon::parse($p['pubDate'])->diffForHumans()}}</li>
                                 </ul>
                             </div>
                         </div>
