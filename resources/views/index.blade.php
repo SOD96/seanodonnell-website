@@ -186,7 +186,7 @@
                             <div class="col-md-6">
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">PHP / Laravel / Codeigniter</h4>
+                                        <h4 class="float-left mb-3 mt-0">PHP / Laravel / Symfony / Codeigniter</h4>
                                     </div>
                                     <div class="spacer" data-height="10"></div>
                                 </div>
@@ -336,8 +336,9 @@
                     <div id="su-diag" class="white-popup zoom-anim-dialog mfp-hide">
                         <img src="{{URL::to('https://d1jwnk81pqqyj5.cloudfront.net/images/streamupdater.com.png')}}" alt="Title" />
                         <h2>Stream Updater</h2>
-                        <p>StreamUpdater is a platform designed to help streamers manage their twitch.tv streams automatically.</p>
-                        <p>StreamUpdater was the first platform to change stream title and games automatically for the streamer to ensure everything is up to date.</p>
+                        <p>StreamUpdater was a platform designed to help streamers manage their twitch.tv streams automatically.</p>
+                        <p>StreamUpdater was the first platform to change stream title and games automatically for the streamer to ensure everything is up-to-date.</p>
+                        <p>While it is still online, it is not updated and functionality has been merged into StreamBit.tv</p>
                         <a href="https://streamupdater.com" class="btn btn-default">Visit Site</a>
                     </div>
                 </div>
@@ -362,6 +363,7 @@
                         <h2>StreamBit</h2>
                         <p>StreamBit is a VOD and Streaming platform designed to compete with some of the biggest sites in the gaming scene</p>
                         <p>This was also one of the first companies I setup to learn more about business and terminology.</p>
+                        <p>It has undergone extensive development since 2017 and has been the project I always turn to for learning laravel upgrades and utilizing new frontends. It is a true test bed, hence why it has a strong feature set.</p>
                         <a href="https://streambit.tv" class="btn btn-default">Visit Site</a>
                     </div>
                 </div>
@@ -457,6 +459,35 @@
                         <p>This is a simple leads management system</p>
                         <p>I created this as a base for learning VueJS + InertiaJS with a Laravel (PHP) Backend. Extremely impressed with the responsive nature I ended up opening it up for anyone that wants to use it as a simple leads platform.</p>
                         <p>It was originally created to learn more about the leads process and act as a competitor to those extremely bloated platforms.</p>
+                        <p>It is bespoke, so if you are interested drop me a line and I'll set you up with an install.</p>
+                        <a href="https://crm.seanodonnell.co.uk" class="btn btn-default">Visit Demo Site</a>
+                    </div>
+                </div>
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-md-offset-4 col-sm-6 grid-item creative design">
+                    <a href="#social-diag" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Web</span>
+                                <h4 class="title">Social Media Project</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img style="max-width: 100%; height: 200px; object-fit: fill;" src="{{URL::to('/images/social.png')}}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="social-diag" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{URL::to('/images/social.png')}}" alt="Title" />
+                        <h2>Social Media Project</h2>
+                        <p>An answer to social media corporations effectively flailing about.</p>
+                        <p>I created this in response to Reddit effectively turning on API developers resulting in the closure of many popular apps.</p>
+                        <p>A fully open social media platform that focuses on serving text, not overbloated video / picture / whatever else services.</p>
+                        <p>As with all of my projects, it doesn't seem to profit from ads, rather from crowdfunding.</p>
+                        <p>Still thinking of a name....</p>
+                        <a href="https://social.seanodonnell.co.uk" class="btn btn-default">Visit Site</a>
                     </div>
                 </div>
 
